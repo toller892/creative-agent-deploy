@@ -7,5 +7,6 @@ from creative_agent.server import mcp
 PORT = int(os.getenv("PORT", "8080"))
 
 if __name__ == "__main__":
-    # Run in SSE mode for HTTP deployment
-    mcp.run(transport="sse", port=PORT, host="0.0.0.0")
+    # Run in HTTP mode (Streamable HTTP) for MCP clients
+    # This exposes the server at /mcp endpoint
+    mcp.run(transport="http", port=PORT, host="0.0.0.0")
