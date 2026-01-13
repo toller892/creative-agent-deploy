@@ -1,6 +1,11 @@
 """Entry point for Zeabur deployment."""
 
 import os
+import sys
+
+# Add src directory to Python path for module imports
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
+
 from creative_agent.server import mcp
 
 # Get port from environment (Zeabur sets this)
