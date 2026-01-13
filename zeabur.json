@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.zeabur.app/zeabur.json",
+  "build": {
+    "type": "dockerfile",
+    "dockerfile": "Dockerfile.fly"
+  },
+  "start": {
+    "command": "python -m creative_agent.server"
+  },
+  "ports": [8080],
+  "healthcheck": {
+    "path": "/health",
+    "port": 8080
+  }
+}
