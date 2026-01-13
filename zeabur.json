@@ -4,6 +4,6 @@
     "type": "python"
   },
   "start": {
-    "command": "python main.py"
+    "command": "pip install -e . && python main.py"
   }
 }
