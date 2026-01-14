@@ -17,8 +17,8 @@ from .format_types import (
 )
 
 # Agent configuration
-AGENT_URL = "https://creative.adcontextprotocol.org"
-AGENT_NAME = "AdCP Standard Creative Agent"
+AGENT_URL = "https://creative-agent.zeabur.app"
+AGENT_NAME = "My Creative Agent"
 AGENT_CAPABILITIES = ["validation", "assembly", "generation", "preview"]
 
 # Common macros supported across all formats
